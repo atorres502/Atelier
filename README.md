@@ -127,10 +127,6 @@ No `.env.example` is committed yet — the variables below are read from `backen
 | `REDIS_URL` | No | `redis://localhost:6379/0` | Celery broker/result backend |
 | `PORT` | No | — | Set by the hosting platform (e.g. Railway) |
 
-## Testing & linting
-
-- **Frontend**: ESLint is configured (`npm run lint`). No test framework (Jest/Vitest/Playwright) is set up yet.
-- **Backend**: no test suite exists yet — `curriculum/tests.py` is still the default Django stub. No backend linter (flake8/black/ruff) is configured.
 
 ## Deployment
 
@@ -140,8 +136,6 @@ No `.env.example` is committed yet — the variables below are read from `backen
 
 ### Known limitations
 
-- `backend/Procfile` currently defines two `web:` process lines (one for `gunicorn`, one for `manage.py migrate`); most Procfile parsers only honor the first, so migrations may not be running automatically as intended on deploy — worth double-checking.
-- No CI/CD pipeline (`.github/workflows`) is configured yet.
 - No `.env.example` is committed — new contributors have to reconstruct required variables from `settings.py` (or this README).
 
 ## Team
@@ -150,10 +144,10 @@ Built by a three-person capstone team:
 
 | Name | Focus |
 |---|---|
-| **Alex Torres** ([@atorres502](https://github.com/atorres502)) | Backend, with AI assistance |
+| **Alex Torres** ([@atorres502](https://github.com/atorres502)) | Backend |
 | **Mark Runkle** ([@mrunkle01](https://github.com/mrunkle01)) | Frontend, with assistance across backend and AI |
-| **Seth Cherry** ([@21stRegi](https://github.com/21stRegi)) | AI (primary) |
+| **Seth Cherry** ([@scherry985](https://github.com/scherry985)) | AI |
 
 ## License
 
-No license has been specified yet.
+None as of now.
